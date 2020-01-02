@@ -1,5 +1,5 @@
 # install WCF basic docker image
-FROM mcr.microsoft.com/dotnet/framework/wcf:4.8
+FROM microsoft/wcf
 
 # Create a directory on the container
 RUN mkdir C:\Service

@@ -6,7 +6,7 @@
     <EnableDataBinding>true</EnableDataBinding>
     <ExcludedTypes />
     <ImportXmlTypes>false</ImportXmlTypes>
-    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateInternalTypes>true</GenerateInternalTypes>
     <GenerateMessageContracts>false</GenerateMessageContracts>
     <NamespaceMappings />
     <CollectionMappings />
@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:64837/Calculator.asmx" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://10.211.55.4:83/Calculator.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Calculator.disco" MetadataType="Disco" ID="05eb21e4-9f15-4607-b200-629e668ab884" SourceId="1" SourceUrl="http://localhost:64837/Calculator.asmx?disco" />
-    <MetadataFile FileName="Calculator.wsdl" MetadataType="Wsdl" ID="8b9a0e04-b1e2-4956-8df3-a516603576ae" SourceId="1" SourceUrl="http://localhost:64837/Calculator.asmx?wsdl" />
+    <MetadataFile FileName="Calculator1.wsdl" MetadataType="Wsdl" ID="0673e5ea-ee44-48b9-a806-36e038a6a435" SourceId="1" SourceUrl="http://10.211.55.4:83/Calculator.asmx?wsdl" />
+    <MetadataFile FileName="Calculator1.disco" MetadataType="Disco" ID="64764a40-4d23-4c09-afcd-6c677544ef9e" SourceId="1" SourceUrl="http://10.211.55.4:83/Calculator.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

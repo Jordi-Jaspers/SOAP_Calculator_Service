@@ -10,6 +10,20 @@ Jordi Jaspers [[Github](https://github.com/Jordi-Jaspers "Github Page"), [Linked
 **Description:**
 This is a 3-part project consisting of a REST & SOAP service made from different coding languages. This excercise is trying to give us knowledge about different methods of building a cloud-service. Part 3 is about requesting WSDL-services for information via C# and implemting it on a website. The main objective is to host every created service on a Docker-container.. In this part of the project got in touch with HTML, CSS and C#.  
 
+**Docker(windows)**
+run the 2 services in windows via the next commands
+
+```
+cd <Location dockerfile service>
+docker build -t wcf-iis-service .
+docker run -d -p 83:83 --name wcf wcf-iis-service
+
+cd <Location dockerfile calculator>
+docker build -t wcf-iis-calculator .
+docker run -d -p 89:89 --name wcf_calc wcf-iis-calculator
+```
+
+
 ## What We Learned
  * Command-line programming
  *  XAMPP DataBases
@@ -57,7 +71,7 @@ This is a 3-part project consisting of a REST & SOAP service made from different
 -   Consumed in C3 webservice as test -> done!
 -   Consuming the service in a Java project (Bonuspoints: Use Other service) -> not yet!
 -   Dockerize the part 3 (Bonuspoint: everything Consistent in Docker) -> Done!
--   Deploy everything in AWS Services -> not yet!
+-   Deploy everything in AWS Services -> done!
 
 ## Troubleshooting:   
 -   Can't connect different databases through docker for other services like python-RESTFULL... --> change host from "127.0.0.1" to match the container name of the database

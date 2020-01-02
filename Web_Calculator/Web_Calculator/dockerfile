@@ -1,0 +1,16 @@
+# install WCF basic docker image
+FROM microsoft/wcf
+
+# Create a directory on the container
+RUN mkdir C:\Service
+
+# Copy to cointainer
+COPY Published "C:\\Service"
+
+# run IIS
+RUN powershell -NoProfile -Command \
+Import-module IISAdministration; \
+New-IISSite -Name "Service" -PhysicalPath C:\Service -BindingInformation "*:89:"
+
+# This instruction tells the container to listen on port 89.
+EXPOSE 89

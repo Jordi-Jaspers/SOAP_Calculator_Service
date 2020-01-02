@@ -13,7 +13,7 @@ namespace Web_Calculator.LocalCalculator {
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="LocalCalculator.CalculatorSoap")]
-    public interface CalculatorSoap {
+    internal interface CalculatorSoap {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Addition", ReplyAction="*")]
         int Addition(int x, int y);
@@ -41,12 +41,12 @@ namespace Web_Calculator.LocalCalculator {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface CalculatorSoapChannel : Web_Calculator.LocalCalculator.CalculatorSoap, System.ServiceModel.IClientChannel {
+    internal interface CalculatorSoapChannel : Web_Calculator.LocalCalculator.CalculatorSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class CalculatorSoapClient : System.ServiceModel.ClientBase<Web_Calculator.LocalCalculator.CalculatorSoap>, Web_Calculator.LocalCalculator.CalculatorSoap {
+    internal partial class CalculatorSoapClient : System.ServiceModel.ClientBase<Web_Calculator.LocalCalculator.CalculatorSoap>, Web_Calculator.LocalCalculator.CalculatorSoap {
         
         public CalculatorSoapClient() {
         }

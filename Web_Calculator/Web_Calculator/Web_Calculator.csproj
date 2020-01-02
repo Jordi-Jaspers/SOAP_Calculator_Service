@@ -17,8 +17,8 @@
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort>44370</IISExpressSSLPort>
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
@@ -69,13 +69,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\LocalCalculator\Calculator.disco" />
+    <None Include="Connected Services\LocalCalculator\Calculator1.wsdl" />
     <None Include="Connected Services\LocalCalculator\configuration91.svcinfo" />
     <None Include="Connected Services\LocalCalculator\configuration.svcinfo" />
     <None Include="Connected Services\LocalCalculator\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\LocalCalculator\Calculator1.disco" />
     <Content Include="WebForm1.aspx" />
     <None Include="Connected Services\CalculatorService\configuration91.svcinfo" />
     <None Include="Connected Services\CalculatorService\configuration.svcinfo" />
@@ -107,8 +108,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\CalculatorService\calculator.wsdl" />
-    <None Include="Connected Services\LocalCalculator\Calculator.wsdl" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
