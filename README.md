@@ -23,6 +23,10 @@ docker build -t wcf-iis-calculator .
 docker run -d -p 89:89 --name wcf_calc wcf-iis-calculator
 ```
 
+**Deployed via AWS-toolkit in visual Studio**
+Right click solution explorer and publish to AWS. After publishing you'll get a link to connect to you environment.
+
+<http://calculatorservice-dev.eu-west-2.elasticbeanstalk.com/>
 
 ## What We Learned
  * Command-line programming
@@ -160,3 +164,8 @@ The grading system will be writen in dutch, because it is a copy-paste of the gi
  * Windows Server on AWS: <https://www.youtube.com/watch?v=5FepK5pV39c>
  * Accessing localhost on VM: <https://medium.com/@urubuz/accessing-localhost-in-mac-from-windows-vm-in-virtualbox-312a3de6fedb>
  * Troubleshooting: <https://stackoverflow.com/>
+ * Create AWS instance: <https://www.clickittech.com/aws/create-amazon-ec2-instance/>
+ * Connect SSH instance: <https://eu-west-2.console.aws.amazon.com/ec2/v2/home?region=eu-west-2#Instances:sort=instanceId>
+ * Deploy via EC2: <https://dzone.com/articles/how-to-deploy-laravel-application-on-aws-ec2-the-r>
+ * EBS tutorial: <https://medium.com/faun/deploy-a-docker-ized-laravel-application-to-aws-ecs-with-codebuild-4b0e388f4f53>
+ * Multicontainer docker on AWS: <https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/php-laravel-tutorial.html>
